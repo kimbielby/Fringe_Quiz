@@ -1,8 +1,8 @@
-Question 1: What colour are the glyphs on Fringe? <br>
+Question 1: <%= Question.first.question %> <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_one" value="A">
-    A. Blue
+    A. <%= Question.first.answer %>
   </label>
 </div>
 <div class="radio">
@@ -25,11 +25,11 @@ Question 1: What colour are the glyphs on Fringe? <br>
 </div>
 
 <br>
-Question 2: What is Olivia's last name? <br>
+Question 2: <%= Question.second.question %> <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_two" value="A">
-    A. Dunham
+    A. <%= Question.second.answer %>
   </label>
 </div>
 <div class="radio">
@@ -52,7 +52,7 @@ Question 2: What is Olivia's last name? <br>
 </div>
 
 <br>
-Question 3: Which year was Olivia born? <br>
+Question 3: <%= Question.third.question %> <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_three" value="A">
@@ -62,7 +62,7 @@ Question 3: Which year was Olivia born? <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_three" value="B">
-    B. 1978
+    B. <%= Question.third.answer %>
   </label>
 </div>
 <div class="radio">
@@ -79,11 +79,11 @@ Question 3: Which year was Olivia born? <br>
 </div>
 
 <br>
-Question 4: What is the name of the mental institution that Walter spent time in? <br>
+Question 4: <%= Question.fourth.question %> <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_four" value="A">
-    A. St. Claire's
+    A. <%= Question.fourth.answer %>
   </label>
 </div>
 <div class="radio">
@@ -106,7 +106,7 @@ Question 4: What is the name of the mental institution that Walter spent time in
 </div>
 
 <br>
-Question 5: How many years did Walter spend in the institution? <br>
+Question 5: <%= Question.fifth.question %> <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_five" value="A">
@@ -128,6 +128,6 @@ Question 5: How many years did Walter spend in the institution? <br>
 <div class="radio">
   <label>
     <input type="radio" name="question_five" value="D">
-    D. 17
+    D. <%= Question.fifth.answer %>
   </label>
 </div>
