@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  get '/' => 'quizes#index', as: 'questions'
+  resources :quizzes do
+    resources :questions
+  end
+  resources :results
+
+  get '/' => 'quizzes#quiz_page', as: 'all_questions'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
